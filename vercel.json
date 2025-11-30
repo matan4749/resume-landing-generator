@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "rewrites": [
+    {
+      "source": "/r/:slug",
+      "destination": "/api/r/:slug"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "SENDGRID_API_KEY": "@sendgrid_api_key",
+    "FROM_EMAIL": "@from_email"
+  }
+}
